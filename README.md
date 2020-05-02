@@ -2,8 +2,7 @@
 I made Simple Blog app of backend part with using of mongo db database 
 
 
-# Blog-App
-https://github.com/prince21298/Simple-Blog-App
+[BLOG APP](https://github.com/prince21298/Simple-Blog-App)
 
 
 mongo DB
