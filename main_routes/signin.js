@@ -18,4 +18,13 @@ module.exports=((login,signup_user,jwt,s_key)=>{
             res.send('your password or email is wrong please correct it...')
         })
     })
+    login.get('/users',(req,res)=>{        
+        signup_user.find().select(['name','email'])
+        .then(data=>{
+           res.send(data)
+        })
+        .catch(err=>{
+            res.send('somethings is error here.. ')
+        })
+    })
 })
