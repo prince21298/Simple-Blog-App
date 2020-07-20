@@ -5,9 +5,7 @@ module.exports=((signup,signup_user,jwt,s_key)=>{
             name:body.user_name,
             email:body.email,
             password:body.password
-        })
-        console.log(user);
-        
+        })        
         if (user.email.includes('@')){
             user.save(function(err,data){                   
                 if(!err){
