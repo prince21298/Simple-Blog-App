@@ -2,7 +2,7 @@ module.exports=((signup,signup_user,jwt,s_key)=>{
     signup.post('/signup',(req,res)=>{
         var body= req.body
         var user=new signup_user({
-            name:body.user_name,
+            name:body.name,
             email:body.email,
             password:body.password
         })        

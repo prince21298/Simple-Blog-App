@@ -5,6 +5,8 @@ module.exports=(update,post_data,signup_user,jwt,s_key)=>{
         var n_cookie=cookie[cookie.length-1].slice(0,-10)
         jwt.verify(n_cookie,s_key,(err,data)=>{
             var id=data.id
+            console.log(id);
+            console.log(body);
             signup_user.findByIdAndUpdate(id,body)
             .then((data)=>{
                 signup_user.find({'_id':id})
